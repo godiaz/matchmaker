@@ -1,0 +1,38 @@
+.signup {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1824684/pexels-photo-1824684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+
+  h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  i {
+    padding: 10px;
+  }
+
+  @include for-phone-only {
+
+    h1 {
+      width: 80vw;
+      text-align: center;
+      font-size: 24px;
+    }
+
+
+    h2 {
+      width: 80vw;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

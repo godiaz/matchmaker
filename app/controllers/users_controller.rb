@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to new_user_path
+      redirect_to thanks_path
       flash.alert = "User successfully created"
     else
       flash.alert = "Error"
