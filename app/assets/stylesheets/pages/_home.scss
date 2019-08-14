@@ -1,1 +1,127 @@
 // Specific CSS for your home-page
+
+.navi {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  position: fixed;
+    top: 0;
+    left: 0;
+
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  & img {
+    height: 100px;
+    padding: 10px;
+    object-fit: contain;
+  }
+
+  & h1 {
+    margin-bottom: 0;
+  }
+
+  @include for-phone-only {
+    padding: 10px;
+
+    & img {
+      padding-left: 0;
+      height: 80px;
+    }
+
+
+    h1 {
+      text-align: left;
+      font-size: 18px;
+      width: 280px;
+    }
+
+    h5 {
+      font-size: 14px;
+    }
+  }
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1767434/pexels-photo-1767434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: bottom;
+
+  // ORIENTATION
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 70vw;
+  }
+
+
+  input {
+    width: 300px;
+  }
+
+  @include for-phone-only {
+    height: 100vh;
+
+    h1 {
+      text-align: left;
+      font-size: 20px;
+      width: 280px;
+    }
+  }
+}
+
+input:first-child {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 50px !important;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  &:checked {
+    border-radius: 50px;
+  }
+
+}
+
+
+input[type=submit] {
+  font-weight: 300;
+  background:
+    linear-gradient(#FD297B, #FF5864);
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  height: 40px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.4s;
+
+  &:hover {
+    transition: 0.4s;
+    background:
+      linear-gradient(#FF5864, #FD297B);
+    transform: scale(1.02);
+  }
+}
+
+.footer {
+  height: 40px;
+  width: 100%;
+  background:
+    linear-gradient(#FD297B, #FF5864);
+  position: fixed;
+    bottom: 0;
+}
