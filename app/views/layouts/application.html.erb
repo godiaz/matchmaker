@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Matchbooster | How to get more Tinder Matches | Matching More in Tinder</title>
+    <title>
+      <% if content_for? :title %>
+        <%= yield :title %>
+      <% else %>
+        MatchBooster | No Tinder Matches? Get More Matches On Tinder
+      <% end %>
+    </title>
+    <meta name="description" content=
+      <% if content_for? :description %>
+        <%= yield :description %>
+      <% else %>
+        "No matches on Tinder? MatchBooster helps boost your matches & likes on Tinder | Our smart script helps you get more tinder matches!"
+      <% end %>
+    >
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
