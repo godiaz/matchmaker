@@ -1,16 +1,16 @@
 <div class="navi">
-  <%= image_tag 'logo.png' %>
+  <%= image_tag 'logo.png', alt: "MatchMaker logo | Boost Tinder Matches" %>
   <div>
     <h1>MatchBooster</h1>
-    <h5>Get More Tinder Matches</h5>
+    <h2 style="font-size: 1.25rem;">Get More Tinder Matches</h2>
   </div>
 </div>
 
 <div class="home">
   <h1>Go on more dates! Match with more people! Find the one!</h1>
   <%= simple_form_for(@user) do |f| %>
-      <%= f.input :email_address, label: false, placeholder: "Email Address" %>
-      <%= f.submit %>
+    <%= f.input :email_address, label: false, placeholder: "Email Address" %>
+    <%= f.submit %>
   <% end %>
 </div>
 
