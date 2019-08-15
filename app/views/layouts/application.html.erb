@@ -40,4 +40,19 @@
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
+  <script>
+    const initUpdateNavbarOnScroll = () => {
+      const navbar = document.querySelector('.navi');
+      if (navbar) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY >= window.innerHeight / 6){
+            navbar.classList.add('pink');
+          } else {
+            navbar.classList.remove('pink');
+          }
+        });
+      }
+    }
+
+  </script>
 </html>

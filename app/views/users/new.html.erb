@@ -10,10 +10,35 @@
   <h1>Go on more dates! Match with more people! Find the one!</h1>
   <%= simple_form_for(@user) do |f| %>
     <%= f.input :email_address, label: false, placeholder: "Email Address" %>
-    <%= f.submit %>
+    <%= f.submit "Subscribe" %>
   <% end %>
+</div>
+
+<div class="how-it-works">
+  <%= image_tag 'notindermatches.png' %>
+  <div class="how-it-works_content">
+    <h1>No Tinder Matches?</h1>
+    <h2>Using AI we can increase your matches exponentially. Join us! </h2>
+    <%= simple_form_for(@user) do |f| %>
+      <%= f.input :email_address, label: false, placeholder: "Email Address" %>
+      <%= f.submit "Subscribe" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="how-it-works-2">
+  <div class="how-it-works_content">
+    <h1>Only for $7.99 a Month</h1>
+    <h2>We'll do the swiping for you using our algorithm (based on your likes).</h2>
+    <%= simple_form_for(@user) do |f| %>
+      <%= f.input :email_address, label: false, placeholder: "Email Address" %>
+      <%= f.submit "Subscribe" %>
+    <% end %>
+  </div>
+  <%= image_tag 'nomatchesontinder.png' %>
 </div>
 
 <div class="footer">
   <p>With <i class="fas fa-heart"></i> from Shoreditch </p>
 </div>
+
