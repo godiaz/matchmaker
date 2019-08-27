@@ -142,10 +142,15 @@ input[type=submit] {
   justify-content: flex-start;
   color: white;
 
-  p {
+  a {
     margin: 0;
     padding-left: 20px;
     font-weight: 300;
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   i {

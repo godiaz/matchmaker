@@ -1,0 +1,36 @@
+.privacy {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+  color: #444;
+  background-color: white;
+  padding: 40px;
+
+  & h2 {
+    color: white;
+    background-color: #FD297B;
+    font-weight: 300;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 22px;
+
+    @include for-phone-only {
+      font-size: 16px;
+      width: 80vw;
+    }
+  }
+
+  & p {
+    width: 80vw;
+  }
+}
+
+.privacy-home {
+  color: white;
+  background-color: #FD297B;
+  padding: 8px 40px;
+
+  a {
+    color: white;
+    font-weight: 300;
+  }
+}
